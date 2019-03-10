@@ -13,6 +13,8 @@ import {RadioGroupComponent} from "./path-framework/form/field/radio/radio-group
 import {CheckboxGroupComponent} from "./path-framework/form/field/checkbox/checkbox-group.component";
 import {FormFieldLabelComponent} from "./path-framework/form/field/form-field-label.component";
 import {ProgressBarComponent} from "./path-framework/form/field/progress-bar/progress-bar.component";
+import {SliderFieldComponent} from "./path-framework/form/field/slider/slider-field.component";
+import {ColorPickerComponent} from "./path-framework/form/field/colorPicker/color-picker.component";
 import {LabelFieldComponent} from "./path-framework/form/field/label/label-field.component";
 import {FieldListFieldComponent} from "./path-framework/form/field/fieldList/field-list-field.component";
 import {NumberFieldComponent} from "./path-framework/form/field/number/number-field.component";
@@ -48,6 +50,8 @@ import {BreadcrumbComponent} from "./path-framework/page/element/breadcrumb/brea
         ChartComponent,
         AutoCompleteComponent,
         ProgressBarComponent,
+        SliderFieldComponent,
+        ColorPickerComponent,
         TextFieldComponent,
         TranslationFieldComponent,
         NumberFieldComponent,
@@ -81,6 +85,8 @@ import {BreadcrumbComponent} from "./path-framework/page/element/breadcrumb/brea
         ChartComponent,
         AutoCompleteComponent,
         ProgressBarComponent,
+        SliderFieldComponent,
+        ColorPickerComponent,
         TextFieldComponent,
         TranslationFieldComponent,
         NumberFieldComponent,

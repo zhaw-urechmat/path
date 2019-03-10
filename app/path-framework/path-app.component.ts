@@ -12,6 +12,8 @@ import {FormField} from "./form/field/form-field";
 import {LabelField} from "./form/field/label/label-field.component";
 import {NumberField} from "./form/field/number/number-field.component";
 import {ProgressBarField} from "./form/field/progress-bar/progress-bar.component";
+import {SliderField} from "./form/field/slider/slider-field.component";
+import {ColorPicker} from "./form/field/colorPicker/color-picker.component";
 import {Radio} from "./form/field/radio/radio";
 import {RadioGroupField} from "./form/field/radio/radio-group.component";
 import {TextField} from "./form/field/text/text-field.component";
@@ -730,6 +732,18 @@ export abstract class PathAppComponent implements IPathApp {
                 const progressBarField = new ProgressBarField(form, this.translationService);
                 progressBarField.fromJson(modelFormField);
                 formField = progressBarField;
+                break;
+            }
+            case "SliderField": {
+                const sliderField = new SliderField(form, this.translationService);
+                sliderField.fromJson(modelFormField);
+                formField = sliderField;
+                break;
+            }
+            case "ColorPicker": {
+                const colorPicker = new ColorPicker(form, this.translationService);
+                colorPicker.fromJson(modelFormField);
+                formField = colorPicker;
                 break;
             }
             case "okButton": {

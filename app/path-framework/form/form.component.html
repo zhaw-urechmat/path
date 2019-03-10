@@ -31,6 +31,12 @@
 					<div *ngIf="field.type == 'ProgressBarField'">
 						<path-progress-bar [field]="field"></path-progress-bar>
 					</div>
+					<div *ngIf="field.type == 'SliderField'">
+						<path-slider [field]="field"></path-slider>
+					</div>
+					<div *ngIf="field.type == 'ColorPicker'">
+						<path-color-picker [field]="field"></path-color-picker>
+					</div>
 					<div *ngIf="field.type == 'RadioGroupField'">
 						<path-radio-group [field]="field"></path-radio-group>
 					</div>

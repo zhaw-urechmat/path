@@ -11,7 +11,7 @@ export class NumberFieldComponent {
     field: NumberField;
 }
 
-export class NumberField extends ValueField<number> {
+export class NumberField extends ValueField<any> {
     private _min: number;
     private _max: number;
     private _digits: number;
